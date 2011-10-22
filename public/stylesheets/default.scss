@@ -1,0 +1,83 @@
+$splash-text-color: #444;
+$splash-text-size: 54px;
+
+$def-link-hover: #4a49ff;
+$def-bg: whiteSmoke;
+
+
+@mixin def-link {
+	a {
+		text-decoration:none;
+		color: $splash-text-color;
+
+	}
+
+	a:hover {
+		color: $def-link-hover;
+	}
+}
+
+@mixin splash-text {
+	font-size: $splash-text-size;
+	font-weight: bold;
+	color: $splash-text-color;
+}
+
+@mixin splash {
+	span#intro {
+		@include splash-text;
+	}
+
+	span#name {
+		@include splash-text;
+		color: $def-link-hover;
+	}
+
+}
+
+@mixin byline {
+	div#byline {
+		margin-top:5px;
+		font-weight:normal;
+		font-size:25px;
+
+		a {
+			padding-top:15px;
+			padding-bottom:20px;
+		}
+	}
+
+	div#subbyline {
+		margin-top:5px;
+		color:#aaa;
+		font-weight:normal;
+		font-size:15px;
+
+		a {
+			color:#aaa;
+			padding-top:5px;
+			padding-bottom:10px;
+		}
+
+		a:hover {
+			color:#4a49ff;
+		}
+	}
+}
+
+body {
+	width:800px;
+	padding:0;
+	margin:0;
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:helvetica;
+	background-color: $def-bg;
+}
+
+@include def-link;
+@include byline;
+@include splash;
+
+
