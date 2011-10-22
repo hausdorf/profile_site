@@ -1,9 +1,9 @@
 <body>
-	<span id="intro">Big data. Machine Learning. Randomized Algorithms. NLP. Bayesian Nonparametric Analysis.</span>
+	<span id="splash">Big data. Machine Learning. Randomized Algorithms. NLP. Bayesian Nonparametric Analysis.</span>
 
 	<span id="name">Alex Clemmer</span>.
 
-	<div id="byline"><a href="about.html">About</a>. <a href="about.html">Research</a>. <a href="about.html">Writings</a>.</div>
+	<div id="byline"><%= link_to 'About', root_url %>. <%= link_to 'Research', root_url %>. <%= link_to 'Writings', root_url %>.</div>
 
-	<div id="subbyline"><a href="https://github.com/DrSleep" target="_new">Code</a>. <a href="about.html">Technical Reports</a>. <a href="http://www.quora.com/Alex-Clemmer" target="_new">Quora</a>. <a href="http://www.facebook.com/clemmer.alexander" target="_new">Facebook</a>. <a href="http://gplus.to/apc" target="_new">Google+</a>.</div>
+	<div id="subbyline"><%= link_to 'Code', 'https://github.com/DrSleep', :target => '_blank' %>. <%= link_to 'Technical Reports', '', :target => '_blank' %>. <%= link_to 'Quora', "http://www.quora.com/Alex-Clemmer", :target => '_blank' %>. <%= link_to 'Google+', 'http://gplus.to/apc', :target => '_blank' %>.</div>
 </body>
