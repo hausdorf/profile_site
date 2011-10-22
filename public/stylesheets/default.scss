@@ -74,6 +74,7 @@ body {
 	margin-right:auto;
 	font-family:helvetica;
 	background-color: $def-bg;
+	color: $splash-text-color;
 }
 
 @include def-link;
