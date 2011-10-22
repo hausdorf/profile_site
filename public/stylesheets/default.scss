@@ -24,7 +24,7 @@ $def-bg: whiteSmoke;
 }
 
 @mixin splash {
-	span#intro {
+	span#splash {
 		@include splash-text;
 	}
 
