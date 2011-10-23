@@ -32,7 +32,6 @@ $def-bg: whiteSmoke;
 		@include splash-text;
 		color: $def-link-hover;
 	}
-
 }
 
 @mixin byline {
@@ -65,6 +64,13 @@ $def-bg: whiteSmoke;
 	}
 }
 
+@mixin about {
+	div#about {
+		background-color: white;
+	}
+}
+
+
 body {
 	width:800px;
 	padding:0;
@@ -80,5 +86,5 @@ body {
 @include def-link;
 @include byline;
 @include splash;
-
+@include about;
 
