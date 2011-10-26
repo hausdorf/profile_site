@@ -67,6 +67,7 @@ $def-bg: whiteSmoke;
 @mixin about {
 	div#about {
 		background-color: white;
+		line-height: 120%;
 		padding: 10px;
 		padding-right: 30px;
 		padding-left: 30px;
