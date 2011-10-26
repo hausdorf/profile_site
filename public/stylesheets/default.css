@@ -9,6 +9,12 @@ body {
   background-color: whiteSmoke;
   color: #444444; }
 
+hr {
+  border: 0;
+  width: 90%;
+  height: 1px;
+  background-color: #444444; }
+
 a {
   text-decoration: none;
   color: #444444; }
@@ -48,4 +54,11 @@ span#name {
   color: #4a49ff; }
 
 div#about {
-  background-color: white; }
+  background-color: white;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #AAA; }
+  div#about a {
+    text-decoration: underline; }

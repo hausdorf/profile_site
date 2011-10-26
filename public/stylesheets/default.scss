@@ -5,7 +5,7 @@ $def-link-hover: #4a49ff;
 $def-bg: whiteSmoke;
 
 
-@mixin def-link {
+@mixin spl-link {
 	a {
 		text-decoration:none;
 		color: $splash-text-color;
@@ -67,6 +67,15 @@ $def-bg: whiteSmoke;
 @mixin about {
 	div#about {
 		background-color: white;
+		padding: 10px;
+		padding-right: 30px;
+		padding-left: 30px;
+		border-radius: 15px;
+		box-shadow: 5px 5px 5px #AAA;
+		
+		a {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -83,7 +92,14 @@ body {
 	color: $splash-text-color;
 }
 
-@include def-link;
+hr {
+	border: 0;
+	width: 90%;
+	height: 1px;
+	background-color: $splash-text-color;
+}
+
+@include spl-link;
 @include byline;
 @include splash;
 @include about;
