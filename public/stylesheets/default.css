@@ -63,3 +63,9 @@ div#about {
   box-shadow: 5px 5px 5px #AAA; }
   div#about a {
     text-decoration: underline; }
+
+div#copyright {
+  float: right;
+  margin-top: 10px;
+  color: #bbb;
+  font-size: 12px; }

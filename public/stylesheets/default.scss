@@ -80,6 +80,15 @@ $def-bg: whiteSmoke;
 	}
 }
 
+@mixin copyright {
+	div#copyright {
+		float:right;
+		margin-top: 10px;
+		color: #bbb;
+		font-size: 12px;
+	}
+}
+
 
 body {
 	width:800px;
@@ -104,4 +113,5 @@ hr {
 @include byline;
 @include splash;
 @include about;
+@include copyright;
 
