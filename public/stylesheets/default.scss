@@ -1,5 +1,6 @@
-$splash-text-color: #444;
-$splash-text-size: 54px;
+$splash-text-color: #666;
+$byline-text-color: #444;
+$splash-text-size: 20px;
 
 $def-link-hover: #4a49ff;
 $def-bg: whiteSmoke;
@@ -8,7 +9,7 @@ $def-bg: whiteSmoke;
 @mixin spl-link {
 	a {
 		text-decoration:none;
-		color: $splash-text-color;
+		color: $byline-text-color;
 
 	}
 
@@ -19,12 +20,13 @@ $def-bg: whiteSmoke;
 
 @mixin splash-text {
 	font-size: $splash-text-size;
-	font-weight: bold;
+	font-weight: lighter;
 	color: $splash-text-color;
+	width:400px;
 }
 
 @mixin splash {
-	span#splash {
+	div#splash {
 		@include splash-text;
 	}
 
@@ -32,13 +34,18 @@ $def-bg: whiteSmoke;
 		@include splash-text;
 		color: $def-link-hover;
 	}
+	
+	span.field {
+		@include splash-text;
+		font-weight: bold;
+	}
 }
 
 @mixin byline {
 	div#byline {
 		margin-top:5px;
-		font-weight:normal;
-		font-size:25px;
+		font-weight: normal;
+		font-size:20px;
 
 		a {
 			padding-top:15px;

@@ -7,13 +7,13 @@ body {
   margin-right: auto;
   font-family: helvetica;
   background-color: whiteSmoke;
-  color: #444444; }
+  color: #666666; }
 
 hr {
   border: 0;
   width: 90%;
   height: 1px;
-  background-color: #444444; }
+  background-color: #666666; }
 
 a {
   text-decoration: none;
@@ -25,7 +25,7 @@ a:hover {
 div#byline {
   margin-top: 5px;
   font-weight: normal;
-  font-size: 25px; }
+  font-size: 20px; }
   div#byline a {
     padding-top: 15px;
     padding-bottom: 20px; }
@@ -42,16 +42,25 @@ div#subbyline {
   div#subbyline a:hover {
     color: #4a49ff; }
 
-span#splash {
-  font-size: 54px;
-  font-weight: bold;
-  color: #444444; }
+div#splash {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #666666;
+  width: 400px; }
 
 span#name {
-  font-size: 54px;
-  font-weight: bold;
-  color: #444444;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #666666;
+  width: 400px;
   color: #4a49ff; }
+
+span.field {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #666666;
+  width: 400px;
+  font-weight: bold; }
 
 div#about {
   background-color: white;
