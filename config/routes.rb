@@ -1,4 +1,6 @@
 Home::Application.routes.draw do
+  get "learning/list"
+
   match "about" => "about#index"
 
   # The priority is based upon order of creation:

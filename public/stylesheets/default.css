@@ -6,8 +6,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: helvetica;
+  font-weight: lighter;
+  font-size: 16px;
   background-color: whiteSmoke;
   color: #666666; }
+  body .paper {
+    font-size: 14px; }
+    body .paper .title {
+      font-weight: bold; }
 
 hr {
   border: 0;
@@ -15,8 +21,21 @@ hr {
   height: 1px;
   background-color: #666666; }
 
+b {
+  font-weight: bold; }
+
+table {
+  margin: 1em;
+  border-collapse: collapse; }
+
+td, th {
+  padding: 10px; }
+
+tr {
+  border: 1px #ccc solid; }
+
 a {
-  text-decoration: none;
+  background-color: #fff;
   color: #444444; }
 
 a:hover {
@@ -27,6 +46,8 @@ div#byline {
   font-weight: normal;
   font-size: 20px; }
   div#byline a {
+    text-decoration: none;
+    background-color: inherit;
     padding-top: 15px;
     padding-bottom: 20px; }
 
@@ -36,6 +57,8 @@ div#subbyline {
   font-weight: normal;
   font-size: 15px; }
   div#subbyline a {
+    text-decoration: none;
+    background-color: inherit;
     color: #aaa;
     padding-top: 5px;
     padding-bottom: 10px; }
@@ -52,14 +75,12 @@ span#name {
   font-size: 20px;
   font-weight: lighter;
   color: #666666;
-  width: 400px;
   color: #4a49ff; }
 
 span.field {
   font-size: 20px;
   font-weight: lighter;
   color: #666666;
-  width: 400px;
   font-weight: bold; }
 
 div#about {
@@ -78,3 +99,15 @@ div#copyright {
   margin-top: 10px;
   color: #bbb;
   font-size: 12px; }
+
+div#content {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #666666;
+  width: 800px; }
+
+content#name {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #666666;
+  color: #4a49ff; }

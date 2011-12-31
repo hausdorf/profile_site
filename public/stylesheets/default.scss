@@ -8,7 +8,7 @@ $def-bg: whiteSmoke;
 
 @mixin spl-link {
 	a {
-		text-decoration:none;
+		background-color: #fff;
 		color: $byline-text-color;
 
 	}
@@ -22,12 +22,12 @@ $def-bg: whiteSmoke;
 	font-size: $splash-text-size;
 	font-weight: lighter;
 	color: $splash-text-color;
-	width:400px;
 }
 
 @mixin splash {
 	div#splash {
 		@include splash-text;
+		width:400px;
 	}
 
 	span#name {
@@ -41,6 +41,18 @@ $def-bg: whiteSmoke;
 	}
 }
 
+@mixin content {
+	div#content {
+		@include splash-text;
+		width:800px;
+	}
+
+	content#name {
+		@include splash-text;
+		color: $def-link-hover;
+	}
+}
+
 @mixin byline {
 	div#byline {
 		margin-top:5px;
@@ -48,6 +60,8 @@ $def-bg: whiteSmoke;
 		font-size:20px;
 
 		a {
+			text-decoration: none;
+			background-color: inherit;
 			padding-top:15px;
 			padding-bottom:20px;
 		}
@@ -60,6 +74,8 @@ $def-bg: whiteSmoke;
 		font-size:15px;
 
 		a {
+			text-decoration: none;
+			background-color: inherit;
 			color:#aaa;
 			padding-top:5px;
 			padding-bottom:10px;
@@ -105,8 +121,18 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	font-family:helvetica;
+	font-weight: lighter;
+	font-size: 16px;
 	background-color: $def-bg;
 	color: $splash-text-color;
+	
+	.paper {
+		font-size: 14px;
+		
+		.title {
+			font-weight: bold;
+		}
+	}
 }
 
 hr {
@@ -116,9 +142,28 @@ hr {
 	background-color: $splash-text-color;
 }
 
+b {
+	font-weight: bold;
+}
+
+table {
+	margin: 1em;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px;
+}
+
+tr {
+	border: 1px #ccc solid;
+}
+
+
 @include spl-link;
 @include byline;
 @include splash;
 @include about;
 @include copyright;
+@include content;
 
