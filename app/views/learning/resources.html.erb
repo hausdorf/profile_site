@@ -12,7 +12,27 @@
 
 <br/>
 <p>
-	<a href="#university"><h2>University Programs</h2></a>
+	<%= content_tag :a, '', :name => 'toc' %>
+	<h2><%= link_to 'Table of Contents', {:anchor => 'toc'} %></h2>
+	
+	This list is broken up into a couple of sections.
+	<ul>
+		<li><%= link_to 'University Programs', {:anchor => 'university'} %>, which are course materials officially funded and released by universities.</li>
+		
+		<li><%= link_to 'Original Material', {:anchor => 'original'} %>, video lectures made by people for the Internet (<i>e.g.</i>, Khan Academy).</li>
+		
+		<li><%= link_to 'Material Aggregation Sites', {:anchor => 'agg'} %>, sites that aggregate materials and lectures from other places on the Internet.</li>
+		
+		<li><%= link_to 'Peer-based Environments', {:anchor => 'peer'} %>, sites that emphasize either peer teaching or peer studying (or both).</li>
+		
+		<li><%= link_to 'University-level Research', {:anchor => 'research'} %>, sites that emphasize research material.</li>
+		
+	</ul>
+</p>
+
+<p>
+	<%= content_tag :a, '', :name => 'university' %>
+	<h2><%= link_to 'University Programs', {:anchor => 'university'} %></h2>
 	A number of universities make course material available online. Sometimes this means video lectures, sometimes this means notes and syllabi. Note that OpenCourseWare is a persistent initiative that provides similar materials across the number of universities that participate in it.
 </p>
 <p>
@@ -160,7 +180,8 @@
 
 <br/>
 <p>
-	<a href="#original"><h2>Original Material</h2></a>
+	<%= content_tag :a, '', :name => 'original' %>
+	<h2><%= link_to 'Original Material', {:anchor => 'original'} %></h2>
 	One of the key reasons for this recent rise in interest in internet-based education is <%= link_to 'Khan Academy', 'http://www.khanacademy.org/' %>, whose comprehensive and prolific lectures on everything from Physics to Art History supplement normal classroom education well. At least in the case of KA, the idea is to free up teachers to use class times to do class projects, rather than being forced to teach the basic material on a marginally-effective basis.
 </p>
 <p>
@@ -194,7 +215,8 @@
 
 <br/>
 <p>
-	<a href="#agg"><h2>Material Aggregation Sites</h2></a>
+	<%= content_tag :a, '', :name => 'agg' %>
+	<h2><%= link_to 'Material Aggregation Sites', {:anchor => 'agg'} %></h2>
 	One major problem with university-administrated educational sites is that they are tied to the institution that they represent. Aggregation sites solve this problem by organizing lots of content in one place. For this reason, the entrants here tend to be <b>fairly high quality on average</b>.
 </p>
 <p>
@@ -297,7 +319,8 @@
 
 <br/>
 <p>
-	<a href="#peer"><h2>Peer-Based Environments</h2></a>
+	<%= content_tag :a, '', :name => 'peer' %>
+	<h2><%= link_to 'Peer-Based Environments', {:anchor => 'peer'} %></h2>
 	Another problem with, for example, OpenCourseWare, is that there is no interaction with other people. Peer-based education sites address this problem.
 </p>
 <p>
@@ -328,7 +351,8 @@
 
 <br/>
 <p>
-	<a href="#research"><h2>University-level Research</h2></a>
+	<%= content_tag :a, '', :name => 'research' %>
+	<h2><%= link_to 'University-level Research', {:anchor => 'research'} %></h2>
 	Traditional university research tends to be contained in journals and conferences. With sites like <%= link_to 'videolectures.net', 'http://videolectures.net/' %> this is starting to change, though it should be noted that this tends to happen mainly for expensive conferences (<i>e.g.</i>, machine learning conferences).
 </p>
 <p>
@@ -356,7 +380,7 @@
 
 
 
-
+<%= render '/nav' %>
 
 
 
