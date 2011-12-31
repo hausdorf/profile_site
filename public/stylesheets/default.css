@@ -96,6 +96,8 @@ div#about {
   box-shadow: 5px 5px 5px #AAA; }
   div#about a {
     text-decoration: underline; }
+  div#about span#about-name {
+    color: #4a49ff; }
 
 div#copyright {
   float: right;

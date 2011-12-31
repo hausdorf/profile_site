@@ -100,6 +100,10 @@ $def-bg: whiteSmoke;
 		a {
 			text-decoration: underline;
 		}
+		
+		span#about-name {
+			color: $def-link-hover;
+		}
 	}
 }
 
