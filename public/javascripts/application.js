@@ -28,6 +28,7 @@ function setup() {
 	setup_table("aggTable");
 	setup_table("resTable");
 	setup_table("oriTable");
+	setup_table("peerTable");
 }
 
 window.onload = setup;
