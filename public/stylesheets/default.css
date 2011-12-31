@@ -21,6 +21,9 @@ hr {
   height: 1px;
   background-color: #666666; }
 
+h1 {
+  font-size: 48px; }
+
 b {
   font-weight: bold; }
 
