@@ -1,7 +1,7 @@
 Home::Application.routes.draw do
 
   match "about" => "about#index"
-  match "learning/list" => "learning#list"
+  match "learning/resources" => "learning#resources"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
