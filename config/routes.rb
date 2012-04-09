@@ -3,6 +3,8 @@ Home::Application.routes.draw do
   match "about" => "about#index"
   match "learning/resources" => "learning#resources"
 
+  mathjax 'mathjax'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
