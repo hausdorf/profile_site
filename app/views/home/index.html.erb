@@ -2,11 +2,13 @@
 
 <div id="splash">
 	<p>
-		My name is <span id="name">Alex Clemmer</span>.
+		<span id="name">Alex Clemmer,</span> &nbsp;&nbsp; <span id="motto">\( \forall x: \text{ML} + x \)</span>
+	</p>
+	<%= render '/splashnav' %>
+	<p>
+		I'm a computer science student primarily interested in probabilistic computation, especially massive scale <%= link_to 'machine learning', 'http://en.wikipedia.org/wiki/Machine_learning' %>.
 	</p>
 	<p>
-		I'm mostly interested in massive-scale <span class="field">machine learning</span>, particularly at its intersection with <span class="field">natural language processing</span>.
+	 	I am especially interested in this area as it relates to <%= link_to 'natural language processing', 'http://en.wikipedia.org/wiki/Natural_language_processing' %>, <%= link_to 'human-computer interaction', 'http://en.wikipedia.org/wiki/Human–computer_interaction' %>, and massive scale <%= link_to 'algorithms', 'http://en.wikipedia.org/wiki/Algorithm' %>.
 	</p>
 </div>
-
-<%= render '/splashnav' %>

@@ -1,6 +1,9 @@
-$splash-text-color: #666;
+$splash-text-color: #555;
 $byline-text-color: #444;
-$splash-text-size: 20px;
+$splash-text-size: 17px;
+$splash-name-size: 40px;
+$splash-name-color: #666;
+$splash-motto-size: 23px;
 
 $def-link-hover: #4a49ff;
 $def-bg: whiteSmoke;
@@ -8,7 +11,7 @@ $def-bg: whiteSmoke;
 
 @mixin spl-link {
 	a {
-		background-color: #fff;
+		/*background-color: #fff;*/
 		color: $byline-text-color;
 	}
 
@@ -26,12 +29,21 @@ $def-bg: whiteSmoke;
 @mixin splash {
 	div#splash {
 		@include splash-text;
-		width:400px;
+		width:500px;
 	}
 
 	span#name {
 		@include splash-text;
-		color: $def-link-hover;
+		font-size: $splash-name-size;
+		color: $splash-name-color;
+		font-weight:bold;
+	}
+	
+	span#motto {
+		@include splash-text;
+		font-size: $splash-motto-size;
+		color: $splash-name-color;
+		font-weight:bold;
 	}
 	
 	span.field {
@@ -63,25 +75,11 @@ $def-bg: whiteSmoke;
 			background-color: inherit;
 			padding-top:15px;
 			padding-bottom:20px;
+			color:#888;
 		}
-	}
-
-	div#subbyline {
-		margin-top:5px;
-		color:#aaa;
-		font-weight:normal;
-		font-size:15px;
-
-		a {
-			text-decoration: none;
-			background-color: inherit;
-			color:#aaa;
-			padding-top:5px;
-			padding-bottom:10px;
-		}
-
+		
 		a:hover {
-			color:#4a49ff;
+			color:$def-link-hover;
 		}
 	}
 }
@@ -106,10 +104,42 @@ $def-bg: whiteSmoke;
 	}
 }
 
+@mixin whitebox {
+	background-color: white;
+	line-height: 120%;
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #AAA;
+}
+
+@mixin post {
+	div.post {
+		@include whitebox;
+
+		h1 {
+			line-height:100%;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+@mixin footnote {
+	div.footnote {
+		margin-top: 10px;
+		@include whitebox;
+	}
+}
+
 @mixin copyright {
 	div#copyright {
 		float:right;
-		margin-top: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		color: #bbb;
 		font-size: 12px;
 	}
@@ -176,4 +206,6 @@ tr {
 @include about;
 @include copyright;
 @include content;
+@include post;
+@include footnote;
 

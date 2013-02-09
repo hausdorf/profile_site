@@ -12,7 +12,7 @@ body {
   background-image: url("../images/splashbg.png");
   background-repeat: y-repeat;
   background-position: top center;
-  color: #666666; }
+  color: #555555; }
   body .paper {
     font-size: 14px; }
     body .paper .title {
@@ -22,7 +22,7 @@ hr {
   border: 0;
   width: 90%;
   height: 1px;
-  background-color: #666666; }
+  background-color: #555555; }
 
 h1 {
   font-size: 48px; }
@@ -41,7 +41,7 @@ tr {
   border: 1px #ccc solid; }
 
 a {
-  background-color: #fff;
+  /*background-color: #fff;*/
   color: #444444; }
 
 a:hover {
@@ -55,38 +55,37 @@ div#byline {
     text-decoration: none;
     background-color: inherit;
     padding-top: 15px;
-    padding-bottom: 20px; }
-
-div#subbyline {
-  margin-top: 5px;
-  color: #aaa;
-  font-weight: normal;
-  font-size: 15px; }
-  div#subbyline a {
-    text-decoration: none;
-    background-color: inherit;
-    color: #aaa;
-    padding-top: 5px;
-    padding-bottom: 10px; }
-  div#subbyline a:hover {
+    padding-bottom: 20px;
+    color: #888; }
+  div#byline a:hover {
     color: #4a49ff; }
 
 div#splash {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
-  color: #666666;
-  width: 400px; }
+  color: #555555;
+  width: 500px; }
 
 span#name {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
+  color: #555555;
+  font-size: 40px;
   color: #666666;
-  color: #4a49ff; }
+  font-weight: bold; }
+
+span#motto {
+  font-size: 17px;
+  font-weight: lighter;
+  color: #555555;
+  font-size: 23px;
+  color: #666666;
+  font-weight: bold; }
 
 span.field {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
-  color: #666666;
+  color: #555555;
   font-weight: bold; }
 
 div#about {
@@ -104,18 +103,42 @@ div#about {
 
 div#copyright {
   float: right;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #bbb;
   font-size: 12px; }
 
 div#content {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
-  color: #666666;
+  color: #555555;
   width: 800px; }
 
 content#name {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
-  color: #666666;
+  color: #555555;
   color: #4a49ff; }
+
+div.post {
+  background-color: white;
+  line-height: 120%;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #AAA; }
+  div.post h1 {
+    line-height: 100%; }
+  div.post a {
+    text-decoration: underline; }
+
+div.footnote {
+  margin-top: 10px;
+  background-color: white;
+  line-height: 120%;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #AAA; }

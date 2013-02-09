@@ -7,10 +7,13 @@
 	<%= javascript_include_tag :defaults %>
 	<%= csrf_meta_tag %>
 	<%= mathjax_tag %>
+	<noscript>
+		<h2 style="border-style: solid; padding:5px; color:red;">Hey there! I see you're not using JavaScript. Just FYI, I use <a href="http://www.mathjax.org/" style="color:blue;">MathJax</a> to display things that deserve to look like math.</h2>
+	</noscript>
 </head>
 <body>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
